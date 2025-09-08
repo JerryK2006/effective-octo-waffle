@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Heyy youu </h3>
+    <img src="images-removebg-preview.png" alt="" class="anime-girl">
+    <label for="">Click here to proceed</label><br>
+    <input type="button" value="Hit me" onclick="location.href='index2.html'">
+
+<script>
+  function playMusic() {
+    const audio = document.getElementById('background-music');
+    audio.play();
+  }
+</script>
+
+</body>
+
+<style>
+    .music
+    {
+        font-size: 20px;
+        padding: 12px 25px;
+        border-radius: 25px;
+        background-color: rgb(255, 102, 178);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(255, 102, 178, 0.4);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    body {
+        background-color: #ffe6f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h3 {
+        font-size: 50px;
+        color: rgb(255, 102, 178);
+        text-shadow: 2px 2px 5px rgba(255, 102, 178, 0.7);
+        animation: fadeInText 3s ease forwards;
+    }
+
+    .anime-girl {
+        width: 300px;
+        height: auto;
+        animation: float 6s ease-in-out infinite, heartbeat 1.5s infinite;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(255, 102, 178, 0.5);
+        margin: 20px 0;
+    }
+
+    label {
+        font-size: 30px;
+        color: rgb(255, 51, 153);
+        text-shadow: 1px 1px 3px rgba(255, 51, 153, 0.6);
+        margin-bottom: 20px;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 12px 25px;
+        border-radius: 25px;
+        background-color: rgb(255, 102, 178);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(255, 102, 178, 0.4);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    input:hover {
+        background-color: rgb(255, 51, 153);
+        transform: scale(1.1);
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+    }
+
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+
+    @keyframes fadeInText {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    } 
+</style>
+</html>
